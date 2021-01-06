@@ -1,0 +1,83 @@
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: 'Comfortaa', cursive;
+}
+body{
+  background: url('images/background.jpg') no-repeat;
+  background-size: cover;
+  color: white;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+header{
+  background-color: #FFFFFF;
+}
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.logo{
+  padding: 10px 0px;
+}
+nav{
+  float: right;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+  position: relative;
+}
+nav a{
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+nav a:hover{
+  color: red;
+}
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 0%;
+  top: 0;
+  transition: all ease-in-out 500ms;
+}
+nav a:hover::before{
+  width: 100%;
+}
+.where_we_cover > li{
+  list-style-type: none;
+  font-size: 20px;
+  text-align: center;
+}
+div a:link{
+  color: blue;
+  text-decoration: none;
+  background-color: #FFFFFF
+}
+div a:visited{
+  color: #000000;
+  text-decoration: none;
+  background-color: #FFFFFF
+}
+div a:hover{
+  color: #C8C8C8;
+  text-decoration: none;
+  background-color: #FFFFFF
+}

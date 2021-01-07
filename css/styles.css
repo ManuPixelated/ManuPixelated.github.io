@@ -47,7 +47,7 @@ nav a{
   font-weight: 500;
 }
 nav a:hover{
-  color: red;
+  color: #C8C8C8;
 }
 nav a::before{
   content: '';
@@ -57,11 +57,12 @@ nav a::before{
   width: 0%;
   top: 0;
   transition: all ease-in-out 500ms;
+  color: #000000;
 }
 nav a:hover::before{
   width: 100%;
 }
-.where_we_cover > li{
+.nav > li{
   list-style-type: none;
   font-size: 20px;
   text-align: center;
@@ -74,10 +75,95 @@ div a:link{
 div a:visited{
   color: #000000;
   text-decoration: none;
-  background-color: #FFFFFF
+  background-color: #FFFFFF;
 }
 div a:hover{
   color: #C8C8C8;
   text-decoration: none;
-  background-color: #FFFFFF
+  background-color: #FFFFFF;
+}
+.form {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:300px;
+  background:#f5f5f5;
+  box-shadow:5px 5px 10px 5px #ccc;
+}
+.form .tab-header {
+  height:50px;
+  line-height:50px;
+}
+.form .tab-header > div {
+  width:50%;
+  float:left;
+  text-align:center;
+  background:#ddd;
+  color:#555;
+  cursor:pointer;
+}
+.form .tab-header > div.active {
+  background:#f5f5f5;
+  color:#111;
+}
+.form .tab-content {
+  padding:20px;
+}
+.form .tab-content .form-element {
+  margin:10px 0px;
+}
+.form .tab-content .form-element input {
+  width:100%;
+  padding:10px;
+  border:1px solid #aaa;
+  font-size:16px;
+  background:#f5f5f5;
+  border-radius:5px;
+  outline:none;
+}
+.form .tab-content .form-element input[type="checkbox"] {
+  width:30px;
+  margin:8px 0px;
+  margin-left:-5px;
+}
+.form .tab-content .form-element label {
+  color:#111;
+}
+.form .tab-content .form-element button {
+  margin-top:5px;
+  width:100%;
+  padding:10px;
+  border:none;
+  outline:none;
+  background:#00acee;
+  color:#f5f5f5;
+  font-size:16px;
+  text-transform:uppercase;
+  cursor:pointer;
+  border-radius:5px;
+}
+.form .tab-content > div.active {
+  display:block;
+}
+.form .tab-content > div {
+  display:none;
+}
+.signup {
+  font-weight: bold;
+  font-size: 14px;
+  background-color:#07a5f0;
+  border: 2.5px solid transparent;
+  color: white;
+  padding: 3.5px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  margin: 4px 10px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.signup: hover {
+  
 }
